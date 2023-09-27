@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,9 @@ Route::get('/set-locale', function (Request $request) {
     Session::put('locale', $request->locale);
     return redirect()->back();
 })->name('change-lang');
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'doLogin'])->name('do_login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/register', [AuthController::class, 'doRegister'])->name('do_register');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

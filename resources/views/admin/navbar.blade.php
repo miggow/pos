@@ -289,8 +289,8 @@
             <!-- User Account -->
             <li class="dropdown user-menu">
                 <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-                    <img src="images/user/user-xs-01.jpg" class="user-image rounded-circle" alt="User Image" />
-                    <span class="d-none d-lg-inline-block">John Doe</span>
+                    <img src="{{ asset('images/user/user-xs-01.jpg') }}" class="user-image rounded-circle" alt="User Image" />
+                    <span class="d-none d-lg-inline-block">{{ auth()->user()->name }}</span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-right">
                     <li>
@@ -319,7 +319,7 @@
                     </li>
 
                     <li class="dropdown-footer">
-                        <a class="dropdown-link-item" href="sign-in.html"> <i class="mdi mdi-logout"></i> Log Out
+                        <a class="dropdown-link-item" href="{{ route('logout') }}"> <i class="mdi mdi-logout"></i> Log Out
                         </a>
                     </li>
                 </ul>

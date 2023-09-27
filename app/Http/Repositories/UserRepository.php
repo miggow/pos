@@ -12,6 +12,9 @@ Class UserRepository
         $this->model = $model;
     }
 
+    public function create($data){
+        return $this->model->create($data);
+    }
     public function getAllUser()
     {
         return $this->model->all();

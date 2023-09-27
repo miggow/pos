@@ -49,7 +49,7 @@
                         </div>
                     </ul>
                 </li>
-                <li>
+                {{-- <li>
                     <a class="sidenav-item-link" href="chat.html">
                         <i class="mdi mdi-wechat"></i>
                         <span class="nav-text">Chat</span>
@@ -509,10 +509,10 @@
                             </li>
                         </div>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
         </div>
-        <div class="sidebar-footer">
+        {{-- <div class="sidebar-footer">
             <div class="sidebar-footer-content">
                 <ul class="d-flex">
                     <li>
@@ -525,6 +525,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
     </div>
 </aside>
